@@ -1,0 +1,40 @@
+#ifndef UGINE_IMAGE_H
+#define UGINE_IMAGE_H
+
+#include "string.h"
+#include "types.h"
+#include "renderer.h"
+class Image {
+public:
+    Image(const String& filename, uint16 hframes = 1, uint16 vframes = 1);
+	Image(uint8 * buffer, uint16 width, uint16 height, uint16 hframes = 1, uint16 vframes = 1);
+	virtual ~Image();
+
+    virtual bool IsValid() const { return gltex != 0; }
+    virtual const String& GetFilename() const { return filename; }
+    virtual uint32 GetNumFrames() const { return static_cast<uint32>(hframes * vframes); }
+    virtual uint16 GetHFrames() const { return hframes; }
+    virtual uint16 GetVFrames() const { return vframes; }
+    virtual uint16 GetWidth() const { return static_cast<uint16>(width / hframes); }
+    virtual uint16 GetHeight() const { return static_cast<uint16>(height / vframes); }
+	virtual uint16 GetBufferWidth() const { return width; }
+	virtual uint16 GetBufferHeight() const { return height; }
+    virtual void SetHandle(int32 handlex, int32 handley) { this->handlex = handlex; this->handley = handley; }
+    virtual void SetMidHandle() { SetHandle(GetWidth()/2, GetHeight()/2); }
+    virtual int32 GetHandleX() const { return handlex; }
+    virtual int32 GetHandleY() const { return handley; }
+    virtual void Bind() const;
+    virtual double GetLastU() const { return lastU; }
+    virtual double GetLastV() const { return lastV; }
+protected:
+    virtual uint32 GetTexId() const { return gltex; }
+private:
+    String filename;
+    uint16 hframes, vframes;
+    uint16 width, height;
+    int32 handlex, handley;
+    uint32 gltex;
+    double lastU, lastV;
+};
+
+#endif

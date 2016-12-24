@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\GUI\include\button.h" />
+    <ClInclude Include="..\GUI\include\control.h" />
+    <ClInclude Include="..\GUI\include\dropdownlistbutton.h" />
+    <ClInclude Include="..\GUI\include\droplist.h" />
+    <ClInclude Include="..\GUI\include\ieventlistener.h" />
+    <ClInclude Include="..\GUI\include\imageholder.h" />
+    <ClInclude Include="..\GUI\include\imageselector.h" />
+    <ClInclude Include="..\GUI\include\menu.h" />
+    <ClInclude Include="..\GUI\include\message.h" />
+    <ClInclude Include="..\GUI\include\statbar.h" />
+    <ClInclude Include="..\GUI\include\window.h" />
+    <ClInclude Include="..\InputManager\include\clic.h" />
+    <ClInclude Include="..\InputManager\include\doubleclic.h" />
+    <ClInclude Include="..\InputManager\include\drag.h" />
+    <ClInclude Include="..\InputManager\include\event.h" />
+    <ClInclude Include="..\InputManager\include\eventmanager.h" />
+    <ClInclude Include="..\InputManager\include\eventmanagerinputdefinitions.h" />
+    <ClInclude Include="..\InputManager\include\iregistrable.h" />
+    <ClInclude Include="..\InputManager\include\keyboardcontroller.h" />
+    <ClInclude Include="..\InputManager\include\managercontrolerInteface.h" />
+    <ClInclude Include="..\InputManager\include\managergameinterface.h" />
+    <ClInclude Include="..\InputManager\include\mousecontroller.h" />
+    <ClInclude Include="..\Ugine\include\affector.h" />
+    <ClInclude Include="..\Ugine\include\array.h" />
+    <ClInclude Include="..\Ugine\include\audiobuffer.h" />
+    <ClInclude Include="..\Ugine\include\audioengine.h" />
+    <ClInclude Include="..\Ugine\include\audiosource.h" />
+    <ClInclude Include="..\Ugine\include\audiostream.h" />
+    <ClInclude Include="..\Ugine\include\bone.h" />
+    <ClInclude Include="..\Ugine\include\bonedata.h" />
+    <ClInclude Include="..\Ugine\include\camera.h" />
+    <ClInclude Include="..\Ugine\include\circlecollision.h" />
+    <ClInclude Include="..\Ugine\include\collision.h" />
+    <ClInclude Include="..\Ugine\include\collisionmanager.h" />
+    <ClInclude Include="..\Ugine\include\collisionpixeldata.h" />
+    <ClInclude Include="..\Ugine\include\emitter.h" />
+    <ClInclude Include="..\Ugine\include\file.h" />
+    <ClInclude Include="..\Ugine\include\font.h" />
+    <ClInclude Include="..\Ugine\include\frame.h" />
+    <ClInclude Include="..\Ugine\include\glinclude.h" />
+    <ClInclude Include="..\Ugine\include\glyph.h" />
+    <ClInclude Include="..\Ugine\include\image.h" />
+    <ClInclude Include="..\Ugine\include\isometricmap.h" />
+    <ClInclude Include="..\Ugine\include\isometricscene.h" />
+    <ClInclude Include="..\Ugine\include\isometricsprite.h" />
+    <ClInclude Include="..\Ugine\include\listener.h" />
+    <ClInclude Include="..\Ugine\include\map.h" />
+    <ClInclude Include="..\Ugine\include\mapscene.h" />
+    <ClInclude Include="..\Ugine\include\math.h" />
+    <ClInclude Include="..\Ugine\include\parallaxscene.h" />
+    <ClInclude Include="..\Ugine\include\particle.h" />
+    <ClInclude Include="..\Ugine\include\pixelcollision.h" />
+    <ClInclude Include="..\Ugine\include\rectcollision.h" />
+    <ClInclude Include="..\Ugine\include\renderer.h" />
+    <ClInclude Include="..\Ugine\include\resourcemanager.h" />
+    <ClInclude Include="..\Ugine\include\scene.h" />
+    <ClInclude Include="..\Ugine\include\screen.h" />
+    <ClInclude Include="..\Ugine\include\skeletondata.h" />
+    <ClInclude Include="..\Ugine\include\skeletonsprite.h" />
+    <ClInclude Include="..\Ugine\include\sprite.h" />
+    <ClInclude Include="..\Ugine\include\stb_image_write.h" />
+    <ClInclude Include="..\Ugine\include\stb_truetype.h" />
+    <ClInclude Include="..\Ugine\include\string.h" />
+    <ClInclude Include="..\Ugine\include\ttffont.h" />
+    <ClInclude Include="..\Ugine\include\types.h" />
+    <ClInclude Include="..\Ugine\include\u-gine.h" />
+    <ClInclude Include="..\Ugine\lib\glfw.h" />
+    <ClInclude Include="..\Ugine\lib\openal\AL\al.h" />
+    <ClInclude Include="..\Ugine\lib\openal\AL\alc.h" />
+    <ClInclude Include="..\Ugine\lib\openal\AL\alext.h" />
+    <ClInclude Include="..\Ugine\lib\openal\AL\efx-creative.h" />
+    <ClInclude Include="..\Ugine\lib\openal\AL\efx-presets.h" />
+    <ClInclude Include="..\Ugine\lib\openal\AL\efx.h" />
+    <ClInclude Include="..\Ugine\lib\rapidxml.hpp" />
+    <ClInclude Include="IA\include\behaviouraltree.h" />
+    <ClInclude Include="IA\include\behaviouraltrees.h" />
+    <ClInclude Include="IA\include\node.h" />
+    <ClInclude Include="IA\include\selectornode.h" />
+    <ClInclude Include="IA\include\sequencenode.h" />
+    <ClInclude Include="IA\include\treecontext.h" />
+    <ClInclude Include="IA\tasks\include\calcrotationtask.h" />
+    <ClInclude Include="IA\tasks\include\checkalignmenttask.h" />
+    <ClInclude Include="IA\tasks\include\checkenergytask.h" />
+    <ClInclude Include="IA\tasks\include\checklifetask.h" />
+    <ClInclude Include="IA\tasks\include\checkrangetask.h" />
+    <ClInclude Include="IA\tasks\include\checkthreattask.h" />
+    <ClInclude Include="IA\tasks\include\intercepttask.h" />
+    <ClInclude Include="IA\tasks\include\tasknode.h" />
+    <ClInclude Include="include\appState.h" />
+    <ClInclude Include="include\appstateendgame.h" />
+    <ClInclude Include="include\appstategame.h" />
+    <ClInclude Include="include\appstatemainmenu.h" />
+    <ClInclude Include="include\appstatepregamemenu.h" />
+    <ClInclude Include="include\component.h" />
+    <ClInclude Include="include\componentmessages.h" />
+    <ClInclude Include="include\entity.h" />
+    <ClInclude Include="include\entitycomponents.h" />
+    <ClInclude Include="include\entityfactory.h" />
+    <ClInclude Include="include\externs.h" />
+    <ClInclude Include="include\game.h" />
+    <ClInclude Include="include\lvlManager.h" />
+    <ClInclude Include="include\resourcestore.h" />
+    <ClInclude Include="include\subcomponent.h" />
+    <ClInclude Include="include\userinterface.h" />
+    <ClInclude Include="include\weaponscomponents.h" />
+    <ClInclude Include="include\world.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\GUI\src\button.cpp" />
+    <ClCompile Include="..\GUI\src\control.cpp" />
+    <ClCompile Include="..\GUI\src\dropdownlistbutton.cpp" />
+    <ClCompile Include="..\GUI\src\droplist.cpp" />
+    <ClCompile Include="..\GUI\src\ieventlistener.cpp" />
+    <ClCompile Include="..\GUI\src\imageholder.cpp" />
+    <ClCompile Include="..\GUI\src\imageselector.cpp" />
+    <ClCompile Include="..\GUI\src\menu.cpp" />
+    <ClCompile Include="..\GUI\src\statbar.cpp" />
+    <ClCompile Include="..\GUI\src\window.cpp" />
+    <ClCompile Include="..\InputManager\src\clic.cpp" />
+    <ClCompile Include="..\InputManager\src\doubleclic.cpp" />
+    <ClCompile Include="..\InputManager\src\drag.cpp" />
+    <ClCompile Include="..\InputManager\src\eventmanager.cpp" />
+    <ClCompile Include="..\InputManager\src\keyboardcontroller.cpp" />
+    <ClCompile Include="..\InputManager\src\managercontrolerInteface.cpp" />
+    <ClCompile Include="..\InputManager\src\managergameinterface.cpp" />
+    <ClCompile Include="..\InputManager\src\mousecontroller.cpp" />
+    <ClCompile Include="..\Ugine\lib\stb_image.c" />
+    <ClCompile Include="..\Ugine\lib\stb_vorbis.c" />
+    <ClCompile Include="..\Ugine\src\affector.cpp" />
+    <ClCompile Include="..\Ugine\src\audiobuffer.cpp" />
+    <ClCompile Include="..\Ugine\src\audioengine.cpp" />
+    <ClCompile Include="..\Ugine\src\audiosource.cpp" />
+    <ClCompile Include="..\Ugine\src\audiostream.cpp" />
+    <ClCompile Include="..\Ugine\src\bone.cpp" />
+    <ClCompile Include="..\Ugine\src\camera.cpp" />
+    <ClCompile Include="..\Ugine\src\collisionmanager.cpp" />
+    <ClCompile Include="..\Ugine\src\collisionpixeldata.cpp" />
+    <ClCompile Include="..\Ugine\src\emitter.cpp" />
+    <ClCompile Include="..\Ugine\src\font.cpp" />
+    <ClCompile Include="..\Ugine\src\Glyph.cpp" />
+    <ClCompile Include="..\Ugine\src\image.cpp" />
+    <ClCompile Include="..\Ugine\src\isometricmap.cpp" />
+    <ClCompile Include="..\Ugine\src\isometricscene.cpp" />
+    <ClCompile Include="..\Ugine\src\isometricsprite.cpp" />
+    <ClCompile Include="..\Ugine\src\listener.cpp" />
+    <ClCompile Include="..\Ugine\src\map.cpp" />
+    <ClCompile Include="..\Ugine\src\mapscene.cpp" />
+    <ClCompile Include="..\Ugine\src\math.cpp" />
+    <ClCompile Include="..\Ugine\src\parallaxscene.cpp" />
+    <ClCompile Include="..\Ugine\src\particle.cpp" />
+    <ClCompile Include="..\Ugine\src\renderer.cpp" />
+    <ClCompile Include="..\Ugine\src\resourcemanager.cpp" />
+    <ClCompile Include="..\Ugine\src\scene.cpp" />
+    <ClCompile Include="..\Ugine\src\screen.cpp" />
+    <ClCompile Include="..\Ugine\src\skeletondata.cpp" />
+    <ClCompile Include="..\Ugine\src\skeletonsprite.cpp" />
+    <ClCompile Include="..\Ugine\src\sprite.cpp" />
+    <ClCompile Include="..\Ugine\src\ttffont.cpp" />
+    <ClCompile Include="IA\src\behaviouraltrees.cpp" />
+    <ClCompile Include="IA\src\selectornode.cpp" />
+    <ClCompile Include="IA\src\sequencenode.cpp" />
+    <ClCompile Include="IA\src\treecontext.cpp" />
+    <ClCompile Include="IA\tasks\src\calcrotationtask.cpp" />
+    <ClCompile Include="IA\tasks\src\checkalignmenttask.cpp" />
+    <ClCompile Include="IA\tasks\src\checkenergytask.cpp" />
+    <ClCompile Include="IA\tasks\src\checklifetask.cpp" />
+    <ClCompile Include="IA\tasks\src\checkrangetask.cpp" />
+    <ClCompile Include="IA\tasks\src\checkthreattask.cpp" />
+    <ClCompile Include="IA\tasks\src\intercepttask.cpp" />
+    <ClCompile Include="src\appstateendgame.cpp" />
+    <ClCompile Include="src\appstategame.cpp" />
+    <ClCompile Include="src\appstatemainmenu.cpp" />
+    <ClCompile Include="src\appstatepregamemenu.cpp" />
+    <ClCompile Include="src\entity.cpp" />
+    <ClCompile Include="src\entitycomponents.cpp" />
+    <ClCompile Include="src\entityfactory.cpp" />
+    <ClCompile Include="src\game.cpp" />
+    <ClCompile Include="src\lvlManager.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\resourcestore.cpp" />
+    <ClCompile Include="src\userinterface.cpp" />
+    <ClCompile Include="src\weaponscomponents.cpp" />
+    <ClCompile Include="src\world.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3C050C92-FD13-4779-A528-5D7D521B697B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Comportamientos</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Ugine\lib\openal</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\Ugine\lib;..\Ugine\lib\openal</AdditionalLibraryDirectories>
+      <AdditionalDependencies>openal32.lib;glfw.win32.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
